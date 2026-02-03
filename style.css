@@ -19,14 +19,20 @@ body{
 /* container style */
 .container{
     position: relative;
-    width: 850px;
-    height: 550px;
+    width: 100%;
+    max-width: 850px;
+    min-height: 550px;
     margin: 20px;
     background-color: #fff;
     border-radius: 30px;
     box-shadow: 0 0 30px rgba(0,0,0,0.2);
 overflow: hidden;
 }
+@media (max-width: 768px){ 
+    .container{ 
+        border-radius: 20px;
+        min-height: auto;
+    }
 
 .container h1{
    font-size: 36px;
@@ -167,6 +173,7 @@ form{
     border: 2px solid #fff;
     box-shadow: none;
 }
+
 
 
 
